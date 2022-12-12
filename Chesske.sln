@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chesske", "Chesske\Chesske.csproj", "{4B48FDF8-A56A-4E9F-929B-C0501668E2BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChesskeWPF", "ChesskeWPF\ChesskeWPF.csproj", "{84045681-43EC-4983-A3AF-E42FCB242688}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4B48FDF8-A56A-4E9F-929B-C0501668E2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B48FDF8-A56A-4E9F-929B-C0501668E2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B48FDF8-A56A-4E9F-929B-C0501668E2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84045681-43EC-4983-A3AF-E42FCB242688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84045681-43EC-4983-A3AF-E42FCB242688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84045681-43EC-4983-A3AF-E42FCB242688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84045681-43EC-4983-A3AF-E42FCB242688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
