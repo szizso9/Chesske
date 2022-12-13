@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <ProjectReference Include="..\Chesske\Chesske.csproj" />
   </ItemGroup>
 
 </Project>
