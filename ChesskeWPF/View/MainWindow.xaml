@@ -37,7 +37,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Button Command="{Binding StepCommand}" CommandParameter="{Binding Position}"   Focusable="False" RenderTransformOrigin="0.5, 0.5" FontSize="24" FontWeight="Bold" Background="{Binding Color}">
+                    <Button Command="{Binding StepCommand}" Content="{Binding Name}" CommandParameter="{Binding Position}"   Focusable="False" RenderTransformOrigin="0.5, 0.5" FontSize="24" FontWeight="Bold" Background="{Binding Color}">
 
                     </Button>
                 </DataTemplate>

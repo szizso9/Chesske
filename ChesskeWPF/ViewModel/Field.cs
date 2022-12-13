@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chesske.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,22 @@ namespace Chesske.ViewModel
 
         
         private string _color;
+        private Figure _figure;
+        private string _name;
+
+
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                if (_name != value)
+                {
+                    _name = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
 
         public string Color
@@ -26,7 +43,20 @@ namespace Chesske.ViewModel
             }
         }
 
-       
+        public Figure Figure
+        {
+            get { return _figure; }
+            set
+            {
+                if (_figure != value)
+                {
+                    _figure = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
 
         public int X { get; set; }
 
