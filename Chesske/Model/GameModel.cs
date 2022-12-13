@@ -55,11 +55,24 @@ namespace Chesske.Model
                         }
                     }
 
-                    _figures[i, j] = new Empty();
+                    if (i==1)
+                    {
+                        _figures[i, j] = new Pawn(Model.Color.White);
+                    }
+                    else if (i==_size-2)
+                    {
+                        _figures[i, j] = new Pawn(Model.Color.Black);
+                    }
+                    else
+                    {
+                        _figures[i, j] = new Empty();
+                    }
+
+                   
                     
                 }
             }
-            _figures[0, 0] = new Pawn(Model.Color.White);
+            
         }
 
         public void Click(Point from, Point to)
@@ -67,6 +80,7 @@ namespace Chesske.Model
             if (_figures[from.X,from.Y].CanMove(from,to))
             {
                 _figures[to.X,to.Y] = _figures[from.X,from.Y];
+                _figures[from.X, from.Y] = new Empty();
                 StepSuccess?.Invoke(this, EventArgs.Empty);
             }
         }
